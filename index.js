@@ -86,7 +86,7 @@ module.exports = {
             authStrategy,
         }),
         new StaticApp({
-            path: '/',
+            path: '/static',
             src: 'static',
         }),
     ],
