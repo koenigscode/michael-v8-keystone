@@ -8,6 +8,9 @@ const initialiseData = require('./initial-data');
 const ProjectSchema = require('./model/ProjectSchema')
 const LinkSchema = require('./model/LinkSchema')
 const TagSchema = require('./model/TagSchema')
+const AboutSchema = require('./model/AboutSchema')
+const SkillSchema = require('./model/SkillSchema')
+const ConfigSchema = require('./model/ConfigSchema')
 
 
 
@@ -76,6 +79,9 @@ const authStrategy = keystone.createAuthStrategy({
 keystone.createList('Project', ProjectSchema)
 keystone.createList('Link', LinkSchema)
 keystone.createList('Tag', TagSchema)
+keystone.createList('Skill', SkillSchema)
+keystone.createList('About', AboutSchema)
+keystone.createList('Config', ConfigSchema)
 
 module.exports = {
     keystone,
